@@ -9,7 +9,7 @@
 // Dichiaro una variabile che conterrà il numero dei numeri da indovinare nel gioco:
 let numberOfElements = 5;
 
-// Invoco la funzione per genererà un array di numeri random, salvando il valore in una variabile:
+// Invoco la funzione che genererà un array di numeri random, salvando il valore in una variabile:
 const randomNumbersArray = arrayRndIntergerGenerator(numberOfElements, 1, 100);
 // console.log(randomNumbersArray)
 
@@ -22,7 +22,7 @@ alert(randomNumbersArray);
 // Creo una timing function: 
 const clock = setTimeout(function() {
 
-    // Inizializzo l'array che conterrà i numeri che ci fornità l'utente:
+    // Inizializzo l'array che conterrà i numeri che ci fornirà l'utente:
     let userNumbersArray = [];
 
     // Dichiaro la variabile che conterrà i numeri che ci fornirà l'utente:
@@ -31,7 +31,7 @@ const clock = setTimeout(function() {
     // Creo un ciclo for che funzionerà per il numero di numeri da inserire:
     for(let i=0; i < numberOfElements; i++) {
     
-        // In una variabile registro i numeri che l'utente dovrà inserire attraverso un prompt e li trasformo in numeri con parseInt:
+        // In una variabile registro i numeri che l'utente dovrà inserire attraverso un prompt e li trasformo in numeri:
         userNumbers = parseInt(prompt('Inserisci, uno alla volta, i 5 numeri'));
 
         // Se il numero  è incluso nel array dei numeri random: 
@@ -50,15 +50,6 @@ const clock = setTimeout(function() {
 }, 30000);
 
     
-
-
-
-
-
-
-
-
-
 
 
 
