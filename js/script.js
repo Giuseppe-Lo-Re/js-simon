@@ -19,7 +19,7 @@ alert(randomNumbersArray);
 // - 30 secondi dopo la chiusura dell'alert, l'utente deve inserire, uno alla volta,
 //      i numeri che ha visto precedentemente, tramite il prompt():
 
-// Creo una timing function che si attiverà dopo 30000 millisecondi(= 30 secondi):
+// Creo una timing function: 
 const clock = setTimeout(function() {
 
     // Inizializzo l'array che conterrà i numeri che ci fornità l'utente:
@@ -28,7 +28,7 @@ const clock = setTimeout(function() {
     // Dichiaro la variabile che conterrà i numeri che ci fornirà l'utente:
     let userNumbers;
 
-    // Creo un ciclo while che funzionerà finchè l'utente non avrà inserito 5 numeri:
+    // Creo un ciclo for che funzionerà per il numero di numeri da inserire:
     for(let i=0; i < numberOfElements; i++) {
     
         // In una variabile registro i numeri che l'utente dovrà inserire attraverso un prompt e li trasformo in numeri con parseInt:
@@ -45,6 +45,8 @@ const clock = setTimeout(function() {
 
     // Comunico all'utente quanti e quali numeri sono stati indovinati:
     alert(`hai indovinato ${userNumbersArray.length} numeri ${userNumbersArray}`)  
+
+    // La funzione si attiverà dopo 30000 millisecondi(= 30 secondi) dalla chiusura dell'alert:
 }, 30000);
 
     
